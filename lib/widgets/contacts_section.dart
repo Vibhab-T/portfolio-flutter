@@ -56,18 +56,8 @@ class ContactSection extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          "Get In Touch",
-          style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-            fontWeight: FontWeight.bold,
-            color: Colors.black87,
-          ),
-        ),
-        const SizedBox(height: 10),
-        Text(
           "I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology and game development.",
-          style: Theme.of(
-            context,
-          ).textTheme.bodyLarge!.copyWith(color: Colors.black54, height: 1.6),
+          style: Theme.of(context).textTheme.bodyLarge!.copyWith(height: 1.6),
         ),
 
         const SizedBox(height: 30),
@@ -170,9 +160,9 @@ class ContactSection extends StatelessWidget {
       child: MouseRegion(
         cursor: SystemMouseCursors.click,
         child: Container(
-          width: MediaQuery.of(context).size.width * 0.7,
+          width: MediaQuery.of(context).size.width * 0.6,
           decoration: BoxDecoration(
-            color: Colors.white,
+            color: Colors.grey.shade200,
             borderRadius: BorderRadius.circular(15),
             boxShadow: [
               BoxShadow(

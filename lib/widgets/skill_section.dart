@@ -10,18 +10,8 @@ class SkillsSection extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          "Skills & Technologies",
-          style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-            fontWeight: FontWeight.bold,
-            color: Colors.black87,
-          ),
-        ),
-        const SizedBox(height: 10),
-        Text(
           "A versatile developer with experience across mobile apps, games, and full-stack web development.",
-          style: Theme.of(
-            context,
-          ).textTheme.bodyLarge!.copyWith(color: Colors.black54, height: 1.6),
+          style: Theme.of(context).textTheme.bodyLarge!.copyWith(height: 1.6),
         ),
         const SizedBox(height: 30),
 
@@ -118,19 +108,19 @@ class SkillsSection extends StatelessWidget {
     Color primaryColor,
   ) {
     return Container(
-      width: 125,
+      width: 120,
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Colors.grey.shade200,
         borderRadius: BorderRadius.circular(15),
         boxShadow: [
           BoxShadow(
             color: Colors.black12.withOpacity(0.05),
             blurRadius: 10,
-            spreadRadius: 3,
+            spreadRadius: 1,
           ),
         ],
       ),
-      padding: const EdgeInsets.all(10),
+      padding: const EdgeInsets.all(20),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

@@ -12,7 +12,7 @@ class ProjectCard extends StatelessWidget {
     return Container(
       width: MediaQuery.of(context).size.width * 0.8, // show 2 cards
       decoration: BoxDecoration(
-        color: Colors.white,
+        color: Colors.grey.shade200,
         borderRadius: BorderRadius.circular(15),
         boxShadow: [
           BoxShadow(

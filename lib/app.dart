@@ -2,34 +2,53 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/core/themes/app_theme.dart';
 import 'package:portfolio/pages/home_page.dart';
 
-class App extends StatelessWidget {
+class App extends StatefulWidget {
   const App({super.key});
+
+  @override
+  State<App> createState() => _AppState();
+}
+
+class _AppState extends State<App> {
+  bool _isDarkMode = false;
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Vibhab Timsina | Portfolio",
       debugShowCheckedModeBanner: false,
-      theme: AppTheme.LightTheme,
-      home: const MobileConstrainedHome(),
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.DarkTheme,
+      themeMode: _isDarkMode ? ThemeMode.dark : ThemeMode.light,
+      home: MobileConstrainedHome(
+        isDarkMode: _isDarkMode,
+        onThemeChanged: (isDark) {
+          setState(() {
+            _isDarkMode = isDark;
+          });
+        },
+      ),
     );
   }
 }
 
-// Wrapper widget that constrains the app to mobile width
 class MobileConstrainedHome extends StatelessWidget {
-  const MobileConstrainedHome({super.key});
+  final bool isDarkMode;
+  final Function(bool) onThemeChanged;
+
+  const MobileConstrainedHome({
+    super.key,
+    required this.isDarkMode,
+    required this.onThemeChanged,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        constraints: const BoxConstraints(
-          maxWidth: 420,
-          maxHeight: 900,
-        ), // Standard mobile width
-        color: Colors.grey.shade100,
-        child: const HomePage(),
+        constraints: const BoxConstraints(maxWidth: 600),
+        color: Theme.of(context).scaffoldBackgroundColor,
+        child: HomePage(isDarkMode: isDarkMode, onThemeChanged: onThemeChanged),
       ),
     );
   }
