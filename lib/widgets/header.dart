@@ -26,7 +26,7 @@ class Header extends StatelessWidget {
         ),
         const SizedBox(height: 15),
         Text(
-          "Full-Stack Developer & Game Programmer with experience in Flutter, Unity, and the MERN stack. I want to build everything from mobile apps to 3D games.",
+          "Web/App/Game Developer with experience in Flutter, Unity, Godot, and the MERN stack. I want to build everything from mobile apps to 3D games.",
           style: Theme.of(
             context,
           ).textTheme.bodyMedium!.copyWith(color: Colors.black87, height: 1.5),

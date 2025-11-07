@@ -41,7 +41,7 @@ class _HomePageState extends State<HomePage> {
   // }
 
   void _openCV() async {
-    final url = Uri.parse("");
+    final url = Uri.parse("assets/cv.pdf");
     if (await canLaunchUrl(url)) {
       await launchUrl(url);
     }
