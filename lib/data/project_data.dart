@@ -10,6 +10,14 @@ final List<Project> projectList = [
     tags: ["MERN", "Socket.io", "Real Time"],
   ),
   Project(
+    title: "Wave Function Collapse: Map Generator",
+    description:
+        "A procedural map generation algorithm’s framework for Unity. Uses tile-based Wave Function Collapse to generate coherent and valid maps. Built for a college project.",
+    link: "https://github.com/Vibhab-T/wfc-procgen-a-star",
+    images: ["assets/WFC.png", "assets/wfc2.png", "assets/wfc3.png"],
+    tags: ["ProcGen", "Unity/C#", "A* Pathdfinding"],
+  ),
+  Project(
     title: "Little Knight: 2D Platformer",
     description: "A 2D platformer game made in the Godot engine.",
     link: "https://github.com/Vibhab-T/little-knight",
@@ -46,13 +54,5 @@ final List<Project> projectList = [
     link: "https://github.com/Vibhab-T/gd-docs",
     images: ["assets/squash.png", "assets/squash2.png"],
     tags: ["Godot", "3D"],
-  ),
-  Project(
-    title: "Wave Function Collapse: Map Generator",
-    description:
-        "A procedural map generation algorithm’s framework for Unity. Uses tile-based Wave Function Collapse to generate coherent and valid maps. Built for a college project.",
-    link: "https://github.com/Vibhab-T/wfc-procgen-a-star",
-    images: ["assets/WFC.png", "assets/wfc2.png", "assets/wfc3.png"],
-    tags: ["ProcGen", "Unity/C#", "A* Pathdfinding"],
   ),
 ];

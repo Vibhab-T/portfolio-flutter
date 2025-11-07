@@ -10,7 +10,7 @@ class ProjectCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width * 0.8, // show 2 cards
+      width: MediaQuery.of(context).size.width * 0.6, // show 2 cards
       decoration: BoxDecoration(
         color: Colors.grey.shade200,
         borderRadius: BorderRadius.circular(15),
@@ -34,13 +34,13 @@ class ProjectCard extends StatelessWidget {
               itemCount: project.images.length,
               itemBuilder: (context, index) {
                 return Container(
-                  width: 200,
+                  width: 140,
                   margin: const EdgeInsets.only(right: 10),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     image: DecorationImage(
                       image: AssetImage(project.images[index]),
-                      fit: BoxFit.cover,
+                      fit: BoxFit.contain,
                     ),
                   ),
                 );
