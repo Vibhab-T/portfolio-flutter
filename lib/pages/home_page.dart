@@ -5,7 +5,6 @@ import 'package:portfolio/widgets/custom_carousel_view.dart';
 import 'package:portfolio/widgets/header.dart';
 import 'package:portfolio/widgets/project_card.dart';
 import 'package:portfolio/widgets/skill_section.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class HomePage extends StatefulWidget {
   final bool isDarkMode;
@@ -39,13 +38,6 @@ class _HomePageState extends State<HomePage> {
   // void _scrollToSection(String section) {
   //   setState(() => _activeSection = section);
   // }
-
-  void _openCV() async {
-    final url = Uri.parse("assets/cv.pdf");
-    if (await canLaunchUrl(url)) {
-      await launchUrl(url);
-    }
-  }
 
   @override
   void dispose() {
@@ -111,25 +103,6 @@ class _HomePageState extends State<HomePage> {
                 ),
                 const SizedBox(height: 60),
 
-                // CV Download Button
-                Center(
-                  child: ElevatedButton.icon(
-                    onPressed: _openCV,
-                    icon: const Icon(Icons.download),
-                    label: const Text("Download CV"),
-                    style: ElevatedButton.styleFrom(
-                      padding: const EdgeInsets.symmetric(
-                        horizontal: 25,
-                        vertical: 15,
-                      ),
-                      backgroundColor: Theme.of(context).colorScheme.primary,
-                      foregroundColor: Colors.white,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                    ),
-                  ),
-                ),
                 const SizedBox(height: 40),
 
                 // Footer
