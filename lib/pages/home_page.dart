@@ -23,7 +23,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   late ScrollController _scrollController;
-  String _activeSection = 'home';
+  //String _activeSection = 'home';
 
   @override
   void initState() {
@@ -36,9 +36,9 @@ class _HomePageState extends State<HomePage> {
     // You can implement scroll-based section detection here
   }
 
-  void _scrollToSection(String section) {
-    setState(() => _activeSection = section);
-  }
+  // void _scrollToSection(String section) {
+  //   setState(() => _activeSection = section);
+  // }
 
   void _openCV() async {
     final url = Uri.parse("");
