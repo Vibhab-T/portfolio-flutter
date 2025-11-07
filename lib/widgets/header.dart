@@ -8,16 +8,20 @@ class Header extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const CircleAvatar(
-          radius: 50,
-          backgroundImage: AssetImage('assets/profile.png'), //profile picture
+        Center(
+          child: const CircleAvatar(
+            radius: 50,
+            backgroundImage: AssetImage('assets/profile.png'), //profile picture
+          ),
         ),
         const SizedBox(height: 15),
-        Text(
-          "Vibhab Timsina",
-          style: Theme.of(context).textTheme.headlineMedium!.copyWith(
-            fontWeight: FontWeight.bold,
-            color: Colors.black87,
+        Center(
+          child: Text(
+            "Vibhab Timsina",
+            style: Theme.of(context).textTheme.headlineMedium!.copyWith(
+              fontWeight: FontWeight.bold,
+              color: Colors.black87,
+            ),
           ),
         ),
         const SizedBox(height: 15),
