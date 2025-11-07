@@ -10,7 +10,7 @@ class ProjectCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width * 0.7, // show 2 cards
+      width: MediaQuery.of(context).size.width * 0.8, // show 2 cards
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(15),
@@ -83,7 +83,7 @@ class ProjectCard extends StatelessWidget {
           InkWell(
             onTap: () => launchUrl(Uri.parse(project.link)),
             child: Text(
-              "view on Github ->",
+              "View on Github >",
               style: TextStyle(
                 color: Theme.of(context).colorScheme.primary,
                 fontWeight: FontWeight.w600,

@@ -9,7 +9,7 @@ class CustomCarouselView extends StatefulWidget {
   const CustomCarouselView({
     super.key,
     required this.children,
-    this.height = 300,
+    this.height = 310,
     this.cardsToShow = 1,
   });
 

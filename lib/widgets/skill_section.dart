@@ -118,7 +118,7 @@ class SkillsSection extends StatelessWidget {
     Color primaryColor,
   ) {
     return Container(
-      width: 120,
+      width: 125,
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(15),
@@ -130,7 +130,7 @@ class SkillsSection extends StatelessWidget {
           ),
         ],
       ),
-      padding: const EdgeInsets.all(20),
+      padding: const EdgeInsets.all(10),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
