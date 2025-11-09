@@ -2,20 +2,34 @@ import 'package:portfolio/models/project.dart';
 
 final List<Project> projectList = [
   Project(
-    title: "MERN Chat App",
-    description:
-        "A real-time chatting app made with the MERN stack. Includes user authentication, login, and real-time chatting via socket.io.",
-    link: "https://github.com/Vibhab-T/express-chat",
-    images: ["assets/chat.png", "assets/chat3.png", "assets/chat4.png"],
-    tags: ["MERN", "Socket.io", "Real Time"],
-  ),
-  Project(
     title: "Wave Function Collapse: Map Generator",
     description:
         "A procedural map generation algorithm’s framework for Unity. Uses tile-based Wave Function Collapse to generate coherent and valid maps. Built for a college project.",
     link: "https://github.com/Vibhab-T/wfc-procgen-a-star",
     images: ["assets/WFC.png", "assets/wfc2.png", "assets/wfc3.png"],
     tags: ["ProcGen", "Unity/C#", "A* Pathdfinding"],
+  ),
+  Project(
+    title: "Flutter E-Commerce",
+    description:
+        "An ecommerce app, made in flutter, to showcase a typical ecommerce design with working cart using state management",
+    link: "https://github.com/Vibhab-T/buy-dune-books",
+    images: [
+      "assets/dune.png",
+      "assets/dune2.png",
+      "assets/dune3.png",
+      "assets/dune4.png",
+      "assets/dune5.png",
+    ],
+    tags: ["Ecommerce", "Flutter", "State Management"],
+  ),
+  Project(
+    title: "MERN Chat App",
+    description:
+        "A real-time chatting app made with the MERN stack. Includes user authentication, login, and real-time chatting via socket.io.",
+    link: "https://github.com/Vibhab-T/express-chat",
+    images: ["assets/chat.png", "assets/chat3.png", "assets/chat4.png"],
+    tags: ["MERN", "Socket.io", "Real Time"],
   ),
   Project(
     title: "Little Knight: 2D Platformer",
