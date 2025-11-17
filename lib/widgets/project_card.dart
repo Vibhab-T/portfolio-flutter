@@ -22,7 +22,7 @@ class ProjectCard extends StatelessWidget {
           ),
         ],
       ),
-      padding: const EdgeInsets.all(15),
+      padding: const EdgeInsets.all(8),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
