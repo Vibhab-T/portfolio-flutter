@@ -2,6 +2,14 @@ import 'package:portfolio/models/project.dart';
 
 final List<Project> projectList = [
   Project(
+    title: 'Web E Commerce',
+    description:
+        'An ecommerce web app made primarily to integrate eSewa payment integration. Learned a lot about the standard of backend coding on Node.js/Express.js',
+    link: 'https://github.com/Vibhab-T/ecom-front-and-back',
+    images: ['assets/store1.png', 'assets/store2.png'],
+    tags: ["Node.js", "eSewa Payment", "REST Apis", "HTML/CSS/JS"],
+  ),
+  Project(
     title: "Wave Function Collapse: Map Generator",
     description:
         "A procedural map generation algorithm’s framework for Unity. Uses tile-based Wave Function Collapse to generate coherent and valid maps. Built for a college project.",

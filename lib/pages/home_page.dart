@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> {
   }
 
   void _updateActiveSection() {
-    // You can implement scroll-based section detection here
+    //implement scroll-based section detection here
   }
 
   // void _scrollToSection(String section) {
@@ -61,7 +61,7 @@ class _HomePageState extends State<HomePage> {
             ),
           ),
           child: Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 40),
+            padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 40),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
